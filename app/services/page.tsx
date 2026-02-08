@@ -14,6 +14,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { withBasePath } from "@/lib/base-path";
 
 export const metadata = {
   title: "Services | Beez Garden Services",
@@ -27,7 +28,7 @@ const services = [
     description:
       "Keep your garden looking its best all year round with our regular maintenance plans. We handle watering, feeding, weeding, and general upkeep on a weekly or monthly schedule.",
     icon: Flower2,
-    image: "/images/garden-maintenance.jpg",
+    image: withBasePath("/images/garden-maintenance.jpg"),
     includes: [
       "Watering & feeding schedule",
       "Regular weeding",
@@ -41,7 +42,7 @@ const services = [
     description:
       "Precision cuts and clean edges that make your lawn the envy of the neighbourhood. We use professional equipment to ensure a consistent, healthy cut every time.",
     icon: Scissors,
-    image: "/images/lawn-service.jpg",
+    image: withBasePath("/images/lawn-service.jpg"),
     includes: [
       "Precision mowing",
       "Clean edging & borders",
@@ -55,7 +56,7 @@ const services = [
     description:
       "Thorough weeding and garden cleanup to restore order and beauty. We remove invasive plants and debris to give your garden a fresh start.",
     icon: Sprout,
-    image: "/images/hero-garden.jpg",
+    image: withBasePath("/images/hero-garden.jpg"),
     includes: [
       "Full bed weeding",
       "Debris removal",
@@ -69,7 +70,7 @@ const services = [
     description:
       "Expert shaping and health care for your shrubs, hedges, and trees. Proper pruning promotes healthy growth and keeps your garden looking tidy.",
     icon: TreePine,
-    image: "/images/garden-maintenance.jpg",
+    image: withBasePath("/images/garden-maintenance.jpg"),
     includes: [
       "Hedge shaping",
       "Tree limb trimming",
@@ -83,7 +84,7 @@ const services = [
     description:
       "Complete garden design and installation from scratch. We plan the layout, prepare the soil, and install plants, borders, and features to create your dream garden.",
     icon: Shovel,
-    image: "/images/new-garden.jpg",
+    image: withBasePath("/images/new-garden.jpg"),
     includes: [
       "Design consultation",
       "Soil preparation",
@@ -101,7 +102,7 @@ const services = [
     description:
       "Prepare your garden for any season with our tailored refresh packages. We swap out seasonal plants, add colour, and ensure everything is ready for the months ahead.",
     icon: Sun,
-    image: "/images/hero-garden.jpg",
+    image: withBasePath("/images/hero-garden.jpg"),
     includes: [
       "Seasonal plant swap",
       "Colour planning",

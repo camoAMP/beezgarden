@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Leaf } from "@/components/icons"; // Declare the Leaf component
+import { withBasePath } from "@/lib/base-path";
 
 export function SiteFooter() {
   return (
@@ -11,7 +12,7 @@ export function SiteFooter() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2">
               <Image
-                src="/images/logo.png"
+                src={withBasePath("/images/logo.png")}
                 alt="Bee's Garden Service - Buzzing into a Greener Garden"
                 width={200}
                 height={60}

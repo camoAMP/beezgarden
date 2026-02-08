@@ -1,6 +1,7 @@
 import React from "react"
 import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import { withBasePath } from "@/lib/base-path";
 
 import "./globals.css";
 
@@ -21,8 +22,8 @@ export const metadata: Metadata = {
     "A full-service garden company offering professional maintenance, supplies, and custom 3D-printed garden products. Based in South Africa.",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.png", type: "image/png" },
+      { url: withBasePath("/favicon.ico") },
+      { url: withBasePath("/favicon.png"), type: "image/png" },
     ],
   },
 };

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { withBasePath } from "@/lib/base-path";
 
 export function HeroSection() {
   return (
@@ -9,7 +10,7 @@ export function HeroSection() {
       {/* Hero image with overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-garden.jpg"
+          src={withBasePath("/images/hero-garden.jpg")}
           alt="Lush South African garden maintained by Beez Garden Services"
           fill
           className="object-cover"

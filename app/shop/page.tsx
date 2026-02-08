@@ -8,6 +8,7 @@ import { useState } from "react";
 import { ShoppingCart, Star, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { withBasePath } from "@/lib/base-path";
 
 const categories = [
   "All",
@@ -24,7 +25,7 @@ const products = [
     category: "Seeds & Cuttings",
     price: 85,
     rating: 4.8,
-    image: "/images/seeds-product.jpg",
+    image: withBasePath("/images/seeds-product.jpg"),
     description: "6 essential herb varieties for your kitchen garden.",
     badge: "Popular",
   },
@@ -34,7 +35,7 @@ const products = [
     category: "Seeds & Cuttings",
     price: 55,
     rating: 4.6,
-    image: "/images/seeds-product.jpg",
+    image: withBasePath("/images/seeds-product.jpg"),
     description: "Native South African wildflower blend for colour all year.",
   },
   {
@@ -43,7 +44,7 @@ const products = [
     category: "Seeds & Cuttings",
     price: 120,
     rating: 4.9,
-    image: "/images/seeds-product.jpg",
+    image: withBasePath("/images/seeds-product.jpg"),
     description: "Tomato, pepper, spinach & more to kickstart your veggie patch.",
     badge: "Best Seller",
   },
@@ -53,7 +54,7 @@ const products = [
     category: "Garden Supplies",
     price: 95,
     rating: 4.7,
-    image: "/images/garden-supplies.jpg",
+    image: withBasePath("/images/garden-supplies.jpg"),
     description: "Rich, organic compost for healthier soil and stronger plants.",
   },
   {
@@ -62,7 +63,7 @@ const products = [
     category: "Garden Supplies",
     price: 110,
     rating: 4.8,
-    image: "/images/garden-supplies.jpg",
+    image: withBasePath("/images/garden-supplies.jpg"),
     description: "Nutrient-packed potting mix for pots, beds, and containers.",
     badge: "Popular",
   },
@@ -72,7 +73,7 @@ const products = [
     category: "Garden Supplies",
     price: 75,
     rating: 4.5,
-    image: "/images/garden-supplies.jpg",
+    image: withBasePath("/images/garden-supplies.jpg"),
     description: "Slow-release formula to feed your garden for months.",
   },
   {
@@ -81,7 +82,7 @@ const products = [
     category: "Custom Planters",
     price: 280,
     rating: 5.0,
-    image: "/images/custom-planter.jpg",
+    image: withBasePath("/images/custom-planter.jpg"),
     description: "Geometric hexagonal design, 3D-printed in eco-friendly PLA.",
     badge: "Custom",
   },
@@ -91,7 +92,7 @@ const products = [
     category: "Custom Planters",
     price: 320,
     rating: 4.9,
-    image: "/images/planters-collection.jpg",
+    image: withBasePath("/images/planters-collection.jpg"),
     description: "Elegant wave-textured cylinder planter for statement plants.",
     badge: "Custom",
   },
@@ -101,7 +102,7 @@ const products = [
     category: "Custom Planters",
     price: 350,
     rating: 5.0,
-    image: "/images/custom-planter.jpg",
+    image: withBasePath("/images/custom-planter.jpg"),
     description: "Custom planter with your house name or family name engraved.",
     badge: "Custom",
   },
@@ -111,7 +112,7 @@ const products = [
     category: "Service Add-ons",
     price: 180,
     rating: 4.7,
-    image: "/images/garden-supplies.jpg",
+    image: withBasePath("/images/garden-supplies.jpg"),
     description: "Fertilizer + weed control for clients booking lawn services.",
   },
   {
@@ -120,7 +121,7 @@ const products = [
     category: "Service Add-ons",
     price: 220,
     rating: 4.8,
-    image: "/images/seeds-product.jpg",
+    image: withBasePath("/images/seeds-product.jpg"),
     description: "We plant a herb garden during your next service visit.",
   },
   {
@@ -129,7 +130,7 @@ const products = [
     category: "Service Add-ons",
     price: 150,
     rating: 4.6,
-    image: "/images/garden-supplies.jpg",
+    image: withBasePath("/images/garden-supplies.jpg"),
     description: "Bulk mulch and compost delivered with your next service.",
   },
 ];

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Star, Shield, Truck, Users } from "lucide-react";
+import { withBasePath } from "@/lib/base-path";
 
 const stats = [
   { icon: Users, label: "Happy Clients", value: "200+" },
@@ -16,7 +17,7 @@ export function TrustSection() {
           {/* Image side */}
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
             <Image
-              src="/images/garden-maintenance.jpg"
+              src={withBasePath("/images/garden-maintenance.jpg")}
               alt="Professional garden maintenance by Beez Garden Services"
               fill
               className="object-cover"

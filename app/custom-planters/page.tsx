@@ -12,6 +12,7 @@ import {
   Star,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { withBasePath } from "@/lib/base-path";
 
 export const metadata = {
   title: "Custom 3D Planters | Beez Garden Services",
@@ -25,7 +26,7 @@ const planters = [
     price: 280,
     description:
       "Geometric hexagonal design that catches the light beautifully. Perfect for succulents and small herbs.",
-    image: "/images/custom-planter.jpg",
+    image: withBasePath("/images/custom-planter.jpg"),
     sizes: ["Small (10cm)", "Medium (15cm)", "Large (20cm)"],
   },
   {
@@ -33,7 +34,7 @@ const planters = [
     price: 320,
     description:
       "Elegant wave-textured cylinder for statement plants. A modern touch for any patio or windowsill.",
-    image: "/images/planters-collection.jpg",
+    image: withBasePath("/images/planters-collection.jpg"),
     sizes: ["Medium (15cm)", "Large (20cm)", "XL (25cm)"],
   },
   {
@@ -41,7 +42,7 @@ const planters = [
     price: 350,
     description:
       "Custom planter engraved with your house name, family name, or any text you choose. A truly unique gift.",
-    image: "/images/custom-planter.jpg",
+    image: withBasePath("/images/custom-planter.jpg"),
     sizes: ["Medium (15cm)", "Large (20cm)"],
   },
   {
@@ -49,7 +50,7 @@ const planters = [
     price: 240,
     description:
       "Spiral design that creates a dramatic visual effect. Ideal for small succulents and cacti.",
-    image: "/images/planters-collection.jpg",
+    image: withBasePath("/images/planters-collection.jpg"),
     sizes: ["Small (10cm)", "Medium (15cm)"],
   },
   {
@@ -57,7 +58,7 @@ const planters = [
     price: 420,
     description:
       "Multi-tier stacking planter for growing herbs vertically. Saves space and looks incredible.",
-    image: "/images/custom-planter.jpg",
+    image: withBasePath("/images/custom-planter.jpg"),
     sizes: ["3-Tier", "5-Tier"],
   },
   {
@@ -65,7 +66,7 @@ const planters = [
     price: 260,
     description:
       "Clean, modern cube design. Pairs beautifully in sets of 3 along a windowsill or shelf.",
-    image: "/images/planters-collection.jpg",
+    image: withBasePath("/images/planters-collection.jpg"),
     sizes: ["Small (8cm)", "Medium (12cm)", "Large (16cm)"],
   },
 ];
@@ -106,7 +107,7 @@ export default function CustomPlantersPage() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/images/planters-collection.jpg"
+              src={withBasePath("/images/planters-collection.jpg")}
               alt="Collection of custom 3D-printed garden planters"
               fill
               className="object-cover"
@@ -282,7 +283,7 @@ export default function CustomPlantersPage() {
 
               <div className="relative aspect-square overflow-hidden rounded-lg">
                 <Image
-                  src="/images/custom-planter.jpg"
+                  src={withBasePath("/images/custom-planter.jpg")}
                   alt="Close-up of a custom 3D-printed garden planter"
                   fill
                   className="object-cover"

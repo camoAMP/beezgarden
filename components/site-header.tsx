@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { withBasePath } from "@/lib/base-path";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -49,7 +50,7 @@ export function SiteHeader() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 md:py-3">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/logo.png"
+            src={withBasePath("/images/logo.png")}
             alt="Bee's Garden Service - Buzzing into a Greener Garden"
             width={240}
             height={72}

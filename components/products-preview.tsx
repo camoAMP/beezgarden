@@ -2,25 +2,26 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { withBasePath } from "@/lib/base-path";
 
 const categories = [
   {
     title: "Seeds & Cuttings",
     description: "Locally sourced herb, flower, and vegetable seeds for every garden.",
-    image: "/images/seeds-product.jpg",
+    image: withBasePath("/images/seeds-product.jpg"),
     href: "/shop",
   },
   {
     title: "Garden Supplies",
     description: "Premium fertilizers, compost, soil, and tools of the trade.",
-    image: "/images/garden-supplies.jpg",
+    image: withBasePath("/images/garden-supplies.jpg"),
     href: "/shop",
   },
   {
     title: "Custom 3D Planters",
     description:
       "Designed, printed, and delivered by your local garden professionals.",
-    image: "/images/custom-planter.jpg",
+    image: withBasePath("/images/custom-planter.jpg"),
     href: "/custom-planters",
   },
 ];
