@@ -20,6 +20,14 @@ export function HeroSection() {
       </div>
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-center px-6 py-32 md:py-44">
+        <Image
+          src={withBasePath("/images/logo.png")}
+          alt="Beez Garden Services"
+          width={560}
+          height={200}
+          className="mb-6 h-20 w-auto max-w-[85vw] object-contain drop-shadow-md sm:h-24"
+          priority
+        />
         <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-background/70">
           Based in South Africa
         </p>
