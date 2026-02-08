@@ -23,9 +23,9 @@ export function HeroSection() {
         <Image
           src={withBasePath("/images/logo.png")}
           alt="Beez Garden Services"
-          width={560}
-          height={200}
-          className="mb-6 h-20 w-auto max-w-[85vw] object-contain drop-shadow-md sm:h-24"
+          width={600}
+          height={400}
+          className="mb-6 h-auto w-[600px] max-w-[90vw] object-contain drop-shadow-lg sm:w-[720px]"
           priority
         />
         <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-background/70">
